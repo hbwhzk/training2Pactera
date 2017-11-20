@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+
+<html lang="Zh_CN">
+<head>
+
+  <meta charset="utf-8">
+  <title>WCAG 2.0 概述</title>
+  <meta name="description" content="WCAG 2.0 概述">
+  <meta name="author" content="张昆">
+  <meta name="viewport" content=
+  "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/moon.css" id="theme">
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <!-- Printing and PDF exports -->
+
+  <script>
+                    var link = document.createElement( 'link' );
+                        link.rel = 'stylesheet';
+                        link.type = 'text/css';
+                        link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+                        document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script><!--[if lt IE 9]>
+                <script src="lib/js/html5shiv.js"></script>
+                <![endif]-->
+</head>
+
+<body>
+	
+	<div class="reveal">
+    <!-- Any section element inside of this container is displayed as a slide -->
+		<img width="185" height="100" style="position: fixed; bottom: 10px; left: 10px;"  src="pic/SIAA_logo.png" alt="研究会 logo" data-background-transition="zoom">
+    
+	
+	<div class="slides">
+		
+	<section>		
+        <h1>WCAG 2.0 概述</h1>
+        <p>张昆 @<a href="http://siaa.org.cn/">SIAA</a>  </p>
+		<p><a href="mailto:hbwhzk@hotmail.com">hbwhzk@hotmail.com</a><p>
+
+    </section> <!-- 封面 -->
+	
+	<section>
+        <section>
+			<h2><a href="http://www.w3.org/TR/WCAG20/">WCAG 2.0</a></h2>
+			<p><a href="http://www.w3.org/TR/WCAG20/">Web Content Accessibility Guidelines 2.0</a></p>
+		</section>
+
+		<section>
+			<ul>
+				<li>W3C推荐标准，同时也是ISO标准;</li>
+				<li>广泛运用在Web内容、应用与及网站运营;</li>
+				<li>前瞻性的设计思路;</li>
+				<li>可运用在软件、移动设备等；</li>
+			</ul>
+        </section>
+		
+		<section>
+			<p>WCAG 2.0 支持文档</p>
+			<ul>
+				<li><a href="https://www.w3.org/Translations/WCAG20-zh/">Web内容无障碍指南(WCAG)2.0 -- 中文授权翻译</a></li>
+				<li><a href="http://www.w3.org/WAI/WCAG20/quickref/">如何符合WCAG 2.0 （How to Meet WCAG 2.0）</a></li>
+				<li><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/">理解WCAG 2.0 （Understanding WCAG 2.0）</a></li>
+				<li><a href="http://www.w3.org/TR/WCAG20-TECHS/">WCAG 2.0 技巧 （Techniques for WCAG 2.0）</a></li>
+			</ul>
+		</section>
+    
+    </section> <!-- Slides 1 -->
+	
+	
+	<section>
+		<section>
+			<h2>准则 1.1：替代文本</h2>
+			<p>为非文本内容提供替代文本</p>	
+		</section>
+		
+		<section>
+			<p>1.1.1 为所有非文本内容提供替代文本（等级A）</p>
+			<ul>
+				<li>所有图形（像）、图形按钮、图像热点应有相应的替代的等效的文本</li>
+				<li>装饰性图形（像）可被辅助技术忽略</li>
+				<li>复杂的图形提供足够的替代文本说明</li>
+				<li>表单按钮可被辅助技术读取</li>
+				<li>表单输入有相应的文本标签</li>
+				<li>嵌入的多媒体文件有相应的可访问的文字内容</li>
+				<li>表框有相应的标题（title）</li>
+			</ul>			
+		</section>
+	</section><!-- Slides 2  准则 1.1  -->
+		
+	
+	<section>
+		<section>
+			<h2>准则 1.2：时基媒体</h2>
+			<p>为时基媒体提供替代</p>
+		</section>
+		
+		<section>
+			<p>1.2.1 预录制音、视频（等级A）</p>
+			<ul>
+				<li>音频内容提供介绍性的文本</li>
+				<li>视频内容提供介绍性的文本，或者音频介绍</li>
+		</section>
+		
+		<section>
+			<p>1.2.2 （预录制）字幕（等级A）</p>
+			<ul>
+				<li>提供同步字幕</li>
+			</ul>
+		</section>
+		
+		<section>
+			<p>1.2.3 （预录制）音频介绍或媒体替代（等级A）</p>
+			<ul>
+				<li>提供文字性的介绍</li>
+				或者<br>
+				<li>提供音频介绍</li>
+			</ul>	
+		</section>
+		
+		<section>
+			<p>1.2.4 （实时）字幕（等级AA）</p>
+			<ul>
+				<li>所有实时的多媒体内容提供同步字幕</li>
+			</ul>
+		</section>
+		
+		<section>
+			<p>1.2.5 （预录制）音频介绍（等级AA）</p>
+			<ul>
+				<li>所有的视频内容，提供音频介绍</li>
+				<li>注意：仅指那些包含特别意义、且不含音频的视频内容，</li>
+			</ul>
+		</section>
+		
+		<section>
+			<p>1.2.6 （预录制）手语（等级AAA）</p>
+			<ul>
+				<li>为所有包含音频的媒体内容提供手语</li>
+			</ul>
+		</section>
+		
+		<section>
+			<p>1.2.7 （预录制）扩展音频介绍 （等级AAA）</p>
+			<ul>
+				<li>当多媒体中的音频内容不足以了解相应内容时，提供一种附加的音频内容，补足视频中表达的信息</li>
+			</ul>
+		
+		</section>
+		
+		<section>
+			<p>1.2.8 （预录制）媒体替代（等级AAA）</p>
+			<ul>
+				<li>为所有预录制的、有视频轨道的媒体内容，提供介绍性的文字字幕</li>
+			</ul>
+		
+		</section>
+		
+		<section>
+			<p>1.2.9 （实时）纯音频（等级AAA）</p>
+			<ul>
+				<li>所有实时的纯音频内容提供介绍性的文字字幕</li>
+			</ul>
+		
+		</section>
+	</section><!-- Slides 3  准则 1.2 -->
+
+	<section>
+	
+		<section>
+			<h2>准则 1.3：适应性</h2>
+			<p>创建可用不同方式呈现的内容</p>
+		</section>
+		
+		<section>
+			<p>1.3.1 信息和关系（等级A）</p>
+			<ul>
+				<li>使用语言化的标签</li>
+				<li>格式化、标签化处理列表数据</li>
+				<li>输入元素有相应的标签、以及分类</li>
+			</ul>
+		
+		</section>
+		
+		<section>
+			<p>1.3.2 有含义的顺序（等级A）</p>
+			<ul>
+				<li>导航和读取是有顺序和逻辑的</li>
+			</ul>
+		</section>
+
+		<section>
+			<p>1.3.3 感官特性（等级A）</p>
+			<ul>
+				<li>指示、说明不依赖形状、尺寸、以及视觉定位</li>
+				<li>指示、说明不依赖于声音</li>
+			</ul>
+		</section><!-- Slides 4  准则 1.3  -->
+		
+	</section>
+	
+	<section>
+		<section>
+			<h2>准则 1.4 可区分</h2>
+			<p>可简单通过视觉和听觉区分</p>
+		</section>
+		
+		<section>
+			<p>1.4.1 颜色的使用（等级A）</p>
+			<ul>
+				<li>不要单独使用颜色去表达内容或者区分视觉元素</li>
+				<li>文字和链接的颜色的对比度大于3：1，并且有明确的区分</li>
+			</ul>
+		</section>	
+		
+		<section>
+			<p>1.4.2 音频控制（等级A）</p>
+			<ul>
+				<li>网页中包含自动播放超过3秒的音频，提供一种机制，让用户可以暂停、停止、静音或者调整音量</li>
+			</ul>
+		</section>			
+
+		<section>
+			<p>1.4.3 （最小）对比度（等级AA）</p>
+			<ul>
+				<li>文字和图像中的文字，对比度至少为4.5：1</li>
+				<li>18PT（24px）或者 14pt（18.66）黑体，对比度至少为3：1</li>
+			</ul>
+		</section>	
+
+		<section>
+			<p>1.4.4 缩放字体（等级AA）</p>
+			<ul>
+				<li>文字放大一倍，页面仍然可读且功能可用</li>
+			</ul>
+		</section>		
+
+		<section>
+			<p>1.4.5 文本图像（等级AA）</p>
+			<ul>
+				<li>如果可以通过文本达到视觉展示，不要使用文本图像</li>
+			</ul>
+		</section>	
+
+		<section>
+			<p>1.4.6 （增强）对比度（等级AAA）</p>
+			<ul>
+				<li>文字和图像中的文字，对比度至少为7：1</li>
+				<li>18PT（24px）或者 14pt（18.66）黑体，对比度至少为4.5：1</li>
+			</ul>
+		</section>	
+
+		<section>
+			<p>1.4.7 背景音（等级AAA）</p>
+			<ul>
+				<li>音频中的人声部分不会被背景音覆盖，或者可以容易区分</li>
+			</ul>
+		</section>	
+
+		<section>
+			<p>1.4.8 视觉展示（等级AAA）</p>
+			<ul>
+				<li>字符长度最长为80个字符</li>
+				<li>足够的行间距和段落间距（1.5倍行间距） </li>
+				<li>合适的背景和背景色</li>
+				<li>当字体放大一倍，不需要水平滚动</li>
+			</ul>
+		</section>	
+
+		<section>
+			<p>1.4.9 （没有例外）文本图像（等级AAA）</p>
+			<ul>
+				<li>文本在图像中只是做为装饰，或者，信息不能被文本单独传递</li>
+			</ul>
+		</section>			
+	</section><!-- Slides 5  准则 1.4  -->
+
+	<section>
+		<section>
+			<h2>准则 2.1：键盘可访问</h2>
+			<p>所有的功能可通过键盘访问</p>
+		</section>
+		
+		<section>
+			<p>2.1.1 键盘 （等级A）</p>
+			<ul>
+				<li>页面所有功能可通过键盘操作，除非该功能必须得通过非键盘方式完成</li>
+				<li>页面中的快捷键不与浏览器和辅助工具的快捷键冲突</li>
+			</ul>
+		</section>		
+				
+		<section>
+			<p>2.1.2 无键盘陷阱（等级A）</p>
+			<ul>
+				<li>键盘焦点不会锁住或者陷入，用户可以通过键盘导航页面中的所有元素</li>
+			</ul>
+		</section>	
+		
+		<section>
+			<p>2.1.3 （无例外）键盘（等级AAA）</p>
+			<ul>
+				<li>页面中的所有功能都可通过键盘完成</li>
+			</ul>
+		</section>	
+	
+	</section>		
+			
+	<section>
+		<section>
+			<h2>准则 2.2：充足时间</h2>
+			<p>让用户有足够的时间读取和使用内容</p>
+		</section>
+		
+		<section>
+			<p>2.2.1 时限可调（等级A）</p>
+			<ul>
+				<li>如果页面或应用有时间限制，让用户可以选择关闭、调整或者延长时限</li>
+				<li>某些实时项目可免除，如拍卖，或者时限超过20小时</li>
+			</ul>
+		</section>		
+		
+		<section>
+			<p>2.2.2 暂停、停止、隐藏（等级A）</p>
+			<ul>
+				<li>如果页面中包含移动、闪动、滚动的内容，超过5秒，让用户可以选择暂停、停止或者隐藏，除非这些页面行为是必需的</li>
+				<li>自动更新的内容可被用户暂停、停止或者隐藏，或者用户可以控制更新的时限</li>
+			</ul>							
+		</section>	
+		
+		<section>
+			<p>2.2.3 无时限（等级AAA）</p>
+			<ul>
+				<li>内容和功能没有时间限制</li>
+			</ul>
+		</section>	
+		
+		<section>
+			<p>2.2.4 中断（等级AAA）</p>
+			<ul>
+				<li>中断可被用户延迟或者中止</li>
+			</ul>
+		</section>	
+		
+		<section>
+			<p>2.2.5 重新认证（等级AAA）</p>
+			<ul>
+				<li>如果认证过期，用户重新认证后可以不丢失数据，继续完成动作</li>
+			</ul>
+		</section>	
+	</section>
+	
+	
+	<section>
+		<section>
+			<h2>准则 2.3：癫痫</h2>
+			<p>不要设计会导致癫痫发作的内容</p>
+		</section>
+		
+		<section>
+			<p>2.3.1 闪光三次或低于阈值（等级A）</p>
+			<ul>
+				<li>页面中没有超过每秒冷却3次的内容，除非闪动内容很小，并且对比度较低不包含过多的红色</li>
+
+			</ul>
+		</section>		
+	
+		<section>
+			<p>2.3.2 闪光三次（等级AAA）</p>
+			<ul>
+				<li>页面中没有超过每秒冷却3次的内容</li>
+			</ul>
+		</section>	
+	</section>	
+	
+	<section>
+		<section>
+			<h2>准则 2.4：可导航</h2>
+			<p>提供帮助用户导航、查找内容、并确定其位置的方法</p>
+		</section>
+		
+		<section>
+			<p>2.4.1 绕过模块（等级A）</p>
+			<ul>
+				<li>提供内链，跳过页面中重复的模块</li>
+				<li>如果页面中包含多个框架，并且有标题说明，提供链接，可在这些框架中跳转</li>
+			</ul>
+		</section>		
+		
+		<section>
+			<p>2.4.2 页面标题（等级A）</p>
+			<ul>
+				<li>页面有个介绍性和告知性的标题</li>
+			</ul>
+		</section>	
+		
+		<section>
+			<p>2.4.3 焦点顺序（等级A）</p>
+			<ul>
+				<li>导航的链接、表单元素是有逻辑性的</li>
+			</ul>
+		</section>	
+		
+		<section>
+			<p>2.4.4 链接目的（等级A）</p>
+			<ul>
+				<li>链接目的可以通过上下文及其内容了解</li>
+				<li>同样的文字链接 ，链接目的不同，可以较为简单地区分</li>
+			</ul>
+		</section>	
+		
+		<section>
+			<p>2.4.5 多种方法（等级AA）</p>
+			<ul>
+				<li>在网站中寻找网个网页的方法至少有两种</li>
+			</ul>
+		</section>	
+		
+		<section>
+			<p>2.4.6 标题和标签（等级AA）</p>
+			<ul>
+				<li>页面标题头、表格中的标签、其它交互元素是可检测的，</li>
+			</ul>
+		</section>			
+
+		<section>
+			<p>2.4.7 焦点可见（等级AA）</p>
+			<ul>
+				<li>键盘的视觉焦点可见</li>
+			</ul>
+		</section>	
+
+		<section>
+			<p>2.4.8 定位（等级AAA）</p>
+			<ul>
+				<li>如果网页是顺序的网页的一个，应提供相应的提示和方法说明</li>
+			</ul>
+		</section>	
+
+		<section>
+			<p>2.4.9 （仅链接）链接目的（等级AAA）</p>
+			<ul>
+				<li>每个链接的目的可从链接文本中检测出来</li>
+				<li>不存在同样的文本，去不同目的的情况</li>
+			</ul>
+		</section>	
+
+		<section>
+			<p>2.4.10 章节标题（等级AAA）</p>
+			<ul>
+				<li>提供文档的目录结构，合理分配独立的章节标题</li>
+			</ul>
+		</section>			
+	</section>	
+	
+	<section>
+		<section>
+			<h2>准则 3.1 可读性</h2>
+			<p>文本内容是可读且可理解的</p>
+		</section>
+		
+		<section>
+			<p>3.1.1 页面语言（等级A）</p>
+			<ul>
+				<li>通过HTML中的语言标签属性定义页面语言</li>
+			</ul>
+		</section>		
+		
+		<section>
+			<p>3.1.2 局部语言（等级AA）</p>
+			<ul>
+				<li>文字内容中的个别段落（词语）与全文的语言不相同时，应提供相应的语言标签说明</li>
+			</ul>
+		</section>	
+		
+		<section>
+			<p>3.1.3 特殊词语（等级AAA）</p>
+			<ul>
+				<li>词语有歧义，或者生僻应给出定义</li>
+			</ul>
+		</section>	
+		
+		<section>
+			<p>3.1.4 缩写（等级AAA）</p>
+			<ul>
+				<li>为缩写提供完整解释，或者通过属性标签说明</li>
+			</ul>
+		</section>	
+		
+		<section>
+			<p>3.1.5 读写水平（等级AAA）</p>
+			<ul>
+				<li>内容应该可以让初中水平的人士读懂</li>
+			</ul>
+		</section>	
+		
+		<section>
+			<p>3.1.6 发音（等级AAA）</p>
+			<ul>
+				<li>如果单词没有发音就不能理解其含义，为其提供发音，或者提供链接 ，或者提供术语表</li>
+			</ul>
+		</section>		
+	</section>	
+
+	<section>
+		<section>
+			<h2>准则 3.2：可预测</h2>
+			<p>页面的展现和操作是可预测的方式</p>
+		</section>
+		
+		<section>
+			<p>3.2.1 焦点（等级A）</p>
+			<ul>
+				<li>页面元素接受聚集时，不会引起上下文的改变</li>
+			</ul>
+		</section>	
+		
+		<section>
+			<p>3.2.2 输入（等级A）</p>
+			<ul>
+				<li>用户输入信息或者交互控件，不应导致页面内容实质性的改变</li>
+				<li></li>
+			</ul>
+		</section>	
+		
+		<section>
+			<p>3.2.3 一致性导航（等级AA）</p>
+			<ul>
+				<li>导航带个站点时，导航链接重复不发生改变</li>
+			</ul>
+		</section>			
+	
+		<section>
+			<p>3.2.4 一致性标识（等级AA）</p>
+			<ul>
+				<li>多个网页中同样的功能控件，其标识是一致的</li>
+			</ul>
+		</section>	
+
+		<section>
+			<p>3.2.5 请求变化（等级AAA）</p>
+			<ul>
+				<li>所有的页面实质性变化，应有用户主导发生，</li>
+			</ul>
+		</section>			
+	
+	</section>	
+	
+	<section>
+		<section>
+			<h2>准则 3.3：输入辅助</h2>
+			<p>帮助用户避免和错误</p>
+		</section>
+		
+		<section>
+			<p>3.3.1 错误标识（等级A）</p>
+			<ul>
+				<li>表单元素如果需要特别的格式、值、长度应该清晰标明</li>
+				<li>当错误发生时，可以标识错误提供用户、并且允许用户修改</li>
+			</ul>
+		</section>		
+	
+		<section>
+			<p>3.3.2 标签和说明（等级A）</p>
+			<ul>
+				<li>当用户需要输入时，应给出充分的标签和提示说明</li>
+			</ul>
+		</section>	
+
+		<section>
+			<p>3.3.3 错误建议（等级AA）</p>
+			<ul>
+				<li>如果输入错误被检测出来，提供修复错误的建议或者方法</li>
+			</ul>
+		</section>	
+
+		<section>
+			<p>3.3.4 （涉及法律、财务、数据）错误预防（等级AA）</p>
+			<ul>
+				<li>如果用户可以修改、删除法律 、财务、测试数据，应保证这些操作可逆的、能够检查、可以确认的</li>
+				<li></li>
+			</ul>
+		</section>	
+
+		<section>
+			<p>3.3.5 帮助（等级AAA）</p>
+			<ul>
+				<li>提供说明、方法，帮助用户进行表单等输入操作</li>
+				<li></li>
+			</ul>
+		</section>	
+
+		<section>
+			<p>3.3.6 （所有）错误预防（等级AAA）</p>
+			<ul>
+				<li>如果涉及用户提交信息，提交动作是可逆的、可检查的、确认的</li>
+			</ul>
+		</section>			
+	</section>		
+	
+	<section>
+		<section>
+			<h2>准则 4.1：兼容 </h2>
+			<p>最大的程度的兼容当前和未来的用户代理和用户辅助技术</p>
+		</section>
+		
+		<section>
+			<p>4.1.1 解析（等级A）</p>
+			<ul>
+				<li>避免HTML、XHTML的验证解析出现错误</li>
+			</ul>
+		</section>	
+
+		<section>
+			<p>4.1.2 名称、角色、值 （等级A）</p>
+			<ul>
+				<li>元素、控件、表格使用正确的标签、标题、属性、值 </li>
+			</ul>
+		</section>			
+			
+	<section>
+		<h2> 谢谢!</h2>
+		</p>
+	</section>	<!-- 结束 -->
+    </div>
+
+  
+  <script src="lib/js/head.min.js"> </script> 
+  <script src="js/reveal.js"> </script> 
+  <script>
+
+                        // Full list of configuration options available at:
+                        // https://github.com/hakimel/reveal.js#configuration
+                        Reveal.initialize({
+                                controls: true,
+                                progress: true,
+                                history: true,
+                                center: true,
+
+                                transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+                                // Optional reveal.js plugins
+                                dependencies: [
+                                        { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                                        { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                                        { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                                        { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                                        { src: 'plugin/zoom-js/zoom.js', async: true },
+                                        { src: 'plugin/notes/notes.js', async: true }
+                                ]
+                        });
+
+  </script>
+</body>
+</html>
